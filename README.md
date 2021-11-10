@@ -1,8 +1,13 @@
 # Chinahoo.RedisLock
 redis分布式锁
 例子：
-   var cli = new RedisClient("127.0.0.1:6379");
+
+
+
+var cli = new RedisClient("127.0.0.1:6379");
+
  cli.Set("StockCount", 10, 10);
+ 
             Parallel.For(0,500, (i) => { Task.Run(() => {
                 System.Console.WriteLine(LockFactory.CreateLock(cli, "dabc", () =>
                 {
