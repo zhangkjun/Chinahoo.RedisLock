@@ -5,6 +5,7 @@
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <PackageProjectUrl>https://github.com/zhangkjun/Chinahoo.RedisLock</PackageProjectUrl>
     <PackageIcon>logo.jpg</PackageIcon>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>

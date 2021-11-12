@@ -31,6 +31,7 @@ namespace Chinahoo.RedisLock
                         }
                         else
                         {
+                            lockObj.Unlock(); // 解锁
                             return default(T);
                         }
                     }
